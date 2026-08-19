@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدplus | فروشگاه لباس زنانه</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">مد<span>plus</span></div>
+  <nav>
+    <a href="#home">خانه</a><a href="#products">محصولات</a>
+    <a href="#categories">دسته‌بندی</a><a href="#about">درباره ما</a>
+  </nav>
+  <button class="cart-btn" onclick="openCart()">🛒 سبد خرید <b id="cartCount">0</b></button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p>جدیدترین کالکشن ۲۰۲۶</p>
+    <h1>استایل خودت را<br><strong>متفاوت</strong> بساز</h1>
+    <p>جدیدترین لباس‌های زنانه با طراحی خاص و کیفیت عالی</p>
+    <a href="#products" class="main-btn">مشاهده محصولات</a>
+  </div>
+  <div class="hero-image"><div>MOD<br>PLUS</div></div>
+</section>
+
+<section class="categories" id="categories">
+  <h2>دسته‌بندی محصولات</h2>
+  <div class="category-grid">
+    <div class="category">👗<span>لباس زنانه</span></div>
+    <div class="category">👚<span>شومیز</span></div>
+    <div class="category">👖<span>شلوار</span></div>
+    <div class="category">🧥<span>مانتو</span></div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="section-title">
+    <div><p>پیشنهاد مدplus</p><h2>محصولات جدید</h2></div>
+  </div>
+  <div class="product-grid" id="productList"></div>
+</section>
+
+<section class="newsletter">
+  <h2>عضو خانواده مدplus شو</h2>
+  <p>برای دریافت تخفیف‌ها و محصولات جدید ایمیلت را وارد کن.</p>
+  <div><input type="email" placeholder="ایمیل شما"><button>عضویت</button></div>
+</section>
+</main>
+
+<footer id="about">
+  <div><h2>مدplus</h2><p>فروشگاه آنلاین لباس زنانه</p></div>
+  <div><h3>دسترسی سریع</h3><p>محصولات</p><p>درباره ما</p><p>تماس با ما</p></div>
+  <div><h3>ارتباط با ما</h3><p>📞 ۰۹۱۲۱۲۳۴۵۶۷</p><p>📧 info@modplus.ir</p></div>
+</footer>
+
+<div class="cart-modal" id="cartModal">
+  <div class="cart-box">
+    <button class="close" onclick="closeCart()">×</button>
+    <h2>سبد خرید</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">مجموع: <strong id="cartTotal">۰ تومان</strong></div>
+    <button class="checkout">ادامه پرداخت</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
